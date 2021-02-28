@@ -1,0 +1,33 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Pyinstaller Compile (dosbox.exe)",
+            "type": "shell",
+            "command": "pyinstaller --noconfirm --onefile --console  main.py -n dosbox.exe",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "atlas' own little compile and move thingy",
+            "type": "shell",
+            "command": "pyinstaller --noconfirm --onefile --console  main.py -n dosbox.exe; rm 'F:\\Jeux\\Steam\\steamapps\\common\\Ultimate Doom\\base\\dosbox.exe'; cp dist\\dosbox.exe 'F:\\Jeux\\Steam\\steamapps\\common\\Ultimate Doom\\base\\'",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "move stuff",
+            "type": "shell",
+            "command": "rm 'F:\\Jeux\\Steam\\steamapps\\common\\Ultimate Doom\\base\\dosbox.exe'; cp dist\\dosbox.exe 'F:\\Jeux\\Steam\\steamapps\\common\\Ultimate Doom\\base\\'",
+            "problemMatcher": []
+        }
+    ]
+}
