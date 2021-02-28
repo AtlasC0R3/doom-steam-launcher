@@ -6,6 +6,8 @@ This should also be compatible with the Steam overlay if possible.
 Tested with [The Ultimate DOOM](https://store.steampowered.com/app/2280/) and [DOOM II: Hell on Earth](https://store.steampowered.com/app/2300/) in the Steam launcher on Windows 10,
 though it will probably be compatible with Proton for Linux *(I have not tested yet)*.
 
+![Screenshot of the launcher in action](https://user-images.githubusercontent.com/39468657/109404115-0fc72580-7931-11eb-8b57-58b234472158.png)
+
 ## Installation
 
 1. Make sure you have installed a Doom game (that uses the old `*.wad` format). For example, [The Ultimate DOOM](https://store.steampowered.com/app/2280/).
